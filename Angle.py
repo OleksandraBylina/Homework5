@@ -13,6 +13,9 @@ class Triangle:
         self.position = (0, 0)
         self.scale = (1, 1)
 
+    def punkt(self, triangle, position): # триангл - координаты 2 точек, позишн - коррдинаты третьей
+        punktturn= (randint(-100, 100), randint(-100, 100))
+
     def set_position(self):
         self.position = (randint(-200, 200), randint(-200, 200))
 
