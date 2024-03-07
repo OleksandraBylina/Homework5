@@ -1,0 +1,56 @@
+import turtle
+
+class number10:
+    def __init__(self):
+        self.position = (-205, 125)
+
+    def draw(self):
+        turtle.color("#008000")
+        turtle.penup()
+        turtle.goto(self.position)
+        turtle.pendown()
+        turtle.up()
+        turtle.setheading(180)
+        turtle.forward(15)
+        turtle.down()
+        turtle.setheading(90)
+        turtle.forward(38)
+        turtle.setheading(225)
+        turtle.forward(38)
+        turtle.penup()
+        turtle.goto(self.position[0]-15, self.position[1])
+        turtle.pendown()
+        turtle.setheading(270)
+        turtle.forward(38)
+
+        turtle.setheading(0)
+        turtle.forward(15)
+        turtle.back(38)
+        turtle.penup()
+        turtle.goto(self.position[0]+40, self.position[1]-10)
+        turtle.penup()
+        turtle.forward(15)
+        turtle.pendown()
+        turtle.setheading(90)
+        turtle.forward(39)
+        turtle.setheading(135)
+        turtle.forward(13)
+        turtle.setheading(180)
+        turtle.forward(27)
+        turtle.setheading(225)
+        turtle.forward(13)
+        turtle.setheading(270)
+        turtle.forward(57)
+        turtle.setheading(315)
+        turtle.forward(13)
+        turtle.setheading(0)
+        turtle.forward(27)
+        turtle.setheading(45)
+        turtle.forward(13)
+        turtle.setheading(90)
+        turtle.forward(38)
+
+
+if __name__ == '__main__':
+    ten=number10()
+    ten.draw()
